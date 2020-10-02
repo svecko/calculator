@@ -14,6 +14,7 @@
   --white: #ffffff;
   --light-gray: #f7f7f7;
   --gray: #ececec;
+  --medium-gray: #dddddd;
   --dark-gray: #212125;
 }
 
@@ -68,7 +69,8 @@ main {
   font-size: 1.25rem;
   font-weight: 300;
   padding: 1rem;
-  transition: background-color 100ms;
+  transition: background-color 250ms;
+  border-radius: 0;
 }
 
 .one {
@@ -124,7 +126,7 @@ main {
   grid-area: equal;
 }
 
-.operator {
+[data-type='operator'] {
   background-color: var(--light-gray);
 }
 
@@ -132,7 +134,12 @@ main {
   background-color: var(--orange-dark);
 }
 
-.operator:active,
-.number:active {
+[data-type='operator']:active,
+[data-type='number']:active,
+[data-type='clear']:active {
   background-color: var(--gray);
+}
+
+[data-state='selected'] {
+  background-color: var(--medium-gray);
 }
