@@ -67,6 +67,9 @@ function calculate(firstNumber, operator, secondNumber) {
       break;
     case 'divide':
       result = firstNumber / secondNumber;
+      if (secondNumber === 0) {
+        result = 'Karin triggered!';
+      }
       break;
   }
 
