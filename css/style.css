@@ -45,7 +45,7 @@ main {
 .calculator__display {
   background-color: var(--dark-gray);
   color: var(--white);
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 300;
   width: 100vw;
   padding: 0.75rem 1rem;
@@ -155,7 +155,6 @@ main {
   }
 
   .calculator__display {
-    font-size: 4rem;
     width: 24rem;
     height: 20vh;
   }
